@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "{{MicrosoftAppId}}",
+  "version": "1.0.0",
+  "packageName": "com.microsoft.samples.meetingevents_callingbot",
+  "developer": {
+    "name": "<<companyName>>",
+    "websiteUrl": "<<websiteUrl>>",
+    "privacyUrl": "<<privacyUrl>>",
+    "termsOfUseUrl": "<<termsOfUseUrl>>"
+  },
+  "name": {
+    "short": "SecureMeetings",
+    "full": "SecureMeetings"
+  },
+  "description": {
+    "short": "Turn off or mute smart home devices/systems.",
+    "full": "SecureMeetings notifies user to turn off or mute smart home devices/sstems when meeting starts."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#F9F9FA",
+  "staticTabs": [],
+  "bots": [
+    {
+      "botId": "{{MicrosoftAppId}}",
+      "scopes": [ "groupchat" ]
+    }
+  ],
+  "webApplicationInfo": {
+    "id": "{{MicrosoftAppId}}",
+    "resource": "https://RscPermission",
+    "applicationPermissions": [
+      "OnlineMeeting.ReadBasic.Chat"
+    ]
+  },
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [ "identity", "messageTeamMembers" ],
+  "validDomains": [ "{{AppDomain}}" ],
+  "showLoadingIndicator": false
+}
